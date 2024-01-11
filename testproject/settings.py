@@ -163,4 +163,4 @@ STORAGES = {
         "BACKEND": "storages.backends.s3boto3.S3StaticStorage",
     },
 }
-CSRF_TRUSTED_ORIGINS = ['https://web-production-13ab.up.railway.app/']
+CSRF_TRUSTED_ORIGINS =['web-production-13ab.up.railway.app']
