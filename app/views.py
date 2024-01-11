@@ -3,8 +3,10 @@ from django.http import HttpResponse
 
 from .models import TestModel,AddPHoto
 from .forms import PhotoForm
+from django.views.decorators.csrf import csrf_protect
 # Create your views here.
 
+@csrf_protect
 def index(request):
     names=TestModel.objects.all()
     photos=AddPHoto.objects.all()
